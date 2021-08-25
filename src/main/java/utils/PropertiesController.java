@@ -14,4 +14,9 @@ public interface PropertiesController extends Config {
     @Config.Key("base.url")
     String baseUrl();
 
+    @Config.Key("browser")
+    String browser();
+
+
+
 }

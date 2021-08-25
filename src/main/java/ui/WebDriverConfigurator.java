@@ -11,6 +11,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.util.HashMap;
 
 public class WebDriverConfigurator {
+    private WebDriverConfigurator() {
+    }
+
     public static void setChrome() {
         WebDriverManager.chromedriver().setup();
         HashMap<String, Object> chromePrefs = new HashMap<>();
