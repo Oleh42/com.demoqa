@@ -23,7 +23,7 @@ public class Elements extends NavigationBarPage {
     private SelenideElement uploadAndDownload = $x("//div[@class='accordion']/div[1]//li[@id='item-7']");
     private SelenideElement dynamicProperties = $x("//div[@class='accordion']/div[1]//li[@id='item-8']");
 
-    public TextBoxPage openTextBox() {
+    public TextBoxPage openTextBoxPage() {
         textBox.click();
         return PageObjectFactory.getTextBoxPage();
     }

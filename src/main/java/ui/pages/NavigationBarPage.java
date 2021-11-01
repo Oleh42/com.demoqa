@@ -16,7 +16,11 @@ public class NavigationBarPage {
     private SelenideElement widgets = $x("//div[@class='accordion']/div[4]");
     private SelenideElement interactions = $x("//div[@class='accordion']/div[5]");
     private SelenideElement bookStoreApp = $x("//div[@class='accordion']/div[6]");
+    private SelenideElement closeAd = $x("//img[@alt='adplus-dvertising']");
 
+    public void closeAd() {
+        closeAd.click();
+    }
     public Elements openElementsBar() {
         elements.click();
         return PageObjectFactory.getElements();

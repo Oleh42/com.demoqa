@@ -1,7 +1,9 @@
 package ui;
 
 import ui.pages.*;
+import ui.pages.alertsFramesWindows.*;
 import ui.pages.elements.*;
+import ui.pages.forms.PracticeFormPage;
 
 import static com.codeborne.selenide.Selenide.page;
 
@@ -36,6 +38,7 @@ public class PageObjectFactory {
     }
 
     public static BookStoreApp getBookStoreApp() {
+
         return page(BookStoreApp.class);
     }
 
@@ -73,6 +76,30 @@ public class PageObjectFactory {
 
     public static DynamicProperties getDynamicProperties() {
         return page(DynamicProperties.class);
+    }
+
+    public static PracticeFormPage getPracticeFormPage() {
+        return page(PracticeFormPage.class);
+    }
+
+    public static BrowserWindowPage getBrowserWindowPage() {
+        return page(BrowserWindowPage.class);
+    }
+
+    public static AlertsPage getAlertsPage() {
+        return page(AlertsPage.class);
+    }
+
+    public static FramesPage getFramesPage() {
+        return page(FramesPage.class);
+    }
+
+    public static NestedFramesPage getNestedFramesPage() {
+        return page(NestedFramesPage.class);
+    }
+
+    public static ModalDialogsPage getModalDialogsPage() {
+        return page(ModalDialogsPage.class);
     }
 
 
